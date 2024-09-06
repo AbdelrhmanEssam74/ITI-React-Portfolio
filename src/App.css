@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-image: url(./assets/backgroundimg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.container-fluid .main-text {
+    position: absolute;
+    top: 21%;
+    left: 18%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-fluid .main-text p,
+.container-fluid .main-text h1 {
+    color: #fff;
+}
+
+.container-fluid .main-text p {
+    font-size: 20px;
+}
+
+.about-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.main-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 5px 2px 10px gray;
+    text-transform: uppercase;
+}
+
+.about-section .about-text {
+    width: 60%;
+    text-wrap: wrap;
+}
+
+.skills-section {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 150px;
+    background: #3d3d3c;
+}
+
+.skills-section .skills-text {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.skills-section .skills-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.skills .my-focus {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.skills .my-focus p:first-child {
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.skills .my-focus p:first-child:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -50%;
+    left: 0;
+}
+
+.skills-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+progress {
+    text-align: center;
+    height: 1.5em;
+    width: 400px;
+    -webkit-appearance: none;
+    border: none;
+    position: relative;
+}
+
+progress:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    width: 25%;
+    background-color: #959186;
+    color: #fff;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fffffc;
+}
+
+progress::-webkit-progress-value {
+    background-color: #edece7;
+}
+
+.portfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px;
+}
+
+.widgets {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    place-content: center;
+}
+
+.widgets div {
+    display: grid;
+    place-content: center;
+    height: 210px;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+.widgets div:first-child:before,
+.widgets div:nth-child(2):before,
+.widgets div:nth-child(3):before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: #ffffff;
+    bottom: 34%;
+    left: 30%;
+}
+
+.widgets div.gray {
+    background-color: #959186;
+}
+
+.widgets div.dark-gray {
+    background-color: #40403f;
+}
+
+footer {
+    margin-top: 50px;
+    color: #fffffc;
+    background-color: #15110c;
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .left .text {
+    text-transform: uppercase;
+}
+
+footer .left .contact a {
+    color: #fff;
+    margin-left: 8px;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+footer .left .contact a:hover {
+    color: #b4b4b4;
+}
+footer .right .icons {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    gap: 30px;
+}
+
+footer .right .icons svg {
+    cursor: pointer;
+    transition: 0.5s all;
+}
+footer .right .icons svg:hover {
+    color: #b4b4b4;
+}
+footer .right p {
+    margin-top: 10px;
+    font-size: 15px;
+}
